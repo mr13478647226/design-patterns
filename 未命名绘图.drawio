@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-14T01:56:53.066Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="keSawN_bYubBvrNOh_0q" version="21.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-14T02:19:00.396Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="xh32wsaXFZxi_OfcoSZZ" version="21.3.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1434" dy="3102" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -381,6 +381,48 @@
         </mxCell>
         <mxCell id="11gKIhfqWF8Fhhnc01fx-30" value="访问者模式使用场景：业务规则要求遍历多个不同的对象，&lt;br&gt;迭代器模式只能访问同类或同接口的数据，而访问者模式是对迭代器模式的扩充，&lt;br&gt;可以针对访问的对象不同，执行不同的操作" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-0">
           <mxGeometry x="80" y="450" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-31" value="备忘录模式--行为类" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="-1860" width="620" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-32" value="Originator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-31">
+          <mxGeometry x="30" y="60" width="185" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-34" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-32">
+          <mxGeometry y="26" width="185" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-35" value="+ SetMemento(m: Memento)&lt;br&gt;+ CreateMemento()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-32">
+          <mxGeometry y="34" width="185" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-36" value="Memento" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-31">
+          <mxGeometry x="310" y="60" width="95" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-37" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-36">
+          <mxGeometry y="26" width="95" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-38" value="+ GetState()&lt;br&gt;+ SetState()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-36">
+          <mxGeometry y="34" width="95" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-39" value="Caretaker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-31">
+          <mxGeometry x="500" y="83" width="90" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-40" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-39">
+          <mxGeometry y="26" width="90" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-41" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="11gKIhfqWF8Fhhnc01fx-31" source="11gKIhfqWF8Fhhnc01fx-32" target="11gKIhfqWF8Fhhnc01fx-36">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="260" y="100" as="sourcePoint" />
+            <mxPoint x="290" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-42" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="11gKIhfqWF8Fhhnc01fx-31" source="11gKIhfqWF8Fhhnc01fx-39" target="11gKIhfqWF8Fhhnc01fx-36">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="390" y="180" as="sourcePoint" />
+            <mxPoint x="550" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-43" value="在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。&lt;br&gt;这样以后就可将该对象恢复到原先保存的状态" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-31">
+          <mxGeometry x="70" y="223" width="480" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
