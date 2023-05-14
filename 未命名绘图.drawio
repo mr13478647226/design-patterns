@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-14T02:19:00.396Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="xh32wsaXFZxi_OfcoSZZ" version="21.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-14T02:30:44.821Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="fA5drdH-v8u0VXxZhDgC" version="21.3.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1434" dy="3102" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -423,6 +423,30 @@
         </mxCell>
         <mxCell id="11gKIhfqWF8Fhhnc01fx-43" value="在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。&lt;br&gt;这样以后就可将该对象恢复到原先保存的状态" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-31">
           <mxGeometry x="70" y="223" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-44" value="门面模式--结构类" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="-2170" width="620" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-45" value="Facade" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-44">
+          <mxGeometry x="265" y="30" width="90" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-46" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-45">
+          <mxGeometry y="26" width="90" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-47" value="Subsystem Calsses" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-44">
+          <mxGeometry x="247.5" y="110" width="125" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-48" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-47">
+          <mxGeometry y="26" width="125" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-49" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="11gKIhfqWF8Fhhnc01fx-44" source="11gKIhfqWF8Fhhnc01fx-45" target="11gKIhfqWF8Fhhnc01fx-47">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="310" y="180" as="sourcePoint" />
+            <mxPoint x="470" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-50" value="要求一个子系统的外部与其内部的通信必须通过一个统一的对象进行。&lt;br&gt;门面模式提供一个高层次的接口，使得子系统更易于使用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="200" y="-1997" width="400" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
