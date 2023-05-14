@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-14T09:09:40.573Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="nHg96TZaVRJ0aVYAmcc3" version="21.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-14T12:47:18.406Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="Gktg85LR1zGLvNUbxZkD" version="21.3.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1434" dy="5440" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -693,6 +693,57 @@
         </mxCell>
         <mxCell id="11gKIhfqWF8Fhhnc01fx-128" value="注意事项：项目一定要遵循依赖倒置原则和里氏替换原则，&lt;br&gt;否则即使在适合使用适配器的场合下，也会带来非常大的改造" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="225" y="-3527" width="350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-129" value="策略模式--行为类" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="-4240" width="620" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-131" value="Context" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-129">
+          <mxGeometry x="100" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-133" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-131">
+          <mxGeometry y="26" width="120" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-134" value="+ ContextInterface()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-131">
+          <mxGeometry y="34" width="120" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-135" value="Strategy" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-129">
+          <mxGeometry x="360" y="50" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-136" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-135">
+          <mxGeometry y="26" width="150" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-137" value="+ AlgorithmInterface()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-135">
+          <mxGeometry y="34" width="150" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-138" value="ConcreteStrategy" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-129">
+          <mxGeometry x="375" y="190" width="120" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-139" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-138">
+          <mxGeometry y="26" width="120" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-141" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="11gKIhfqWF8Fhhnc01fx-129" source="11gKIhfqWF8Fhhnc01fx-138" target="11gKIhfqWF8Fhhnc01fx-135">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="260" y="150" as="sourcePoint" />
+            <mxPoint x="420" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-142" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="11gKIhfqWF8Fhhnc01fx-129" source="11gKIhfqWF8Fhhnc01fx-131" target="11gKIhfqWF8Fhhnc01fx-135">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="160" y="180" as="sourcePoint" />
+            <mxPoint x="320" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-143" value="+strategy" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-129">
+          <mxGeometry x="260" y="48" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-145" value="策略数量不要超过4个" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-129">
+          <mxGeometry x="140" y="149" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-144" value="定义一组算法。将每个算法都封装起来，并且是她们之间可以互换" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-129">
+          <mxGeometry x="125" y="260" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-130" value="最多5个状态" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="245" y="-732" width="90" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
