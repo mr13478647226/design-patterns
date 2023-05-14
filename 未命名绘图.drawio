@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-14T02:30:44.821Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="fA5drdH-v8u0VXxZhDgC" version="21.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-14T07:45:41.051Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="ssk5TTv2rlKFtUpRrZqK" version="21.3.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1434" dy="3102" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="4271" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -447,6 +447,63 @@
         </mxCell>
         <mxCell id="11gKIhfqWF8Fhhnc01fx-50" value="要求一个子系统的外部与其内部的通信必须通过一个统一的对象进行。&lt;br&gt;门面模式提供一个高层次的接口，使得子系统更易于使用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="200" y="-1997" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-51" value="观察者模式-发布订阅模式--行为类" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="-2550" width="620" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-52" value="Subject" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-51">
+          <mxGeometry x="70" y="40" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-54" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-52">
+          <mxGeometry y="26" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-55" value="+ Attach(o: Observe)&lt;br&gt;+ Detach(o: Observer)&lt;br&gt;+ Notify()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-52">
+          <mxGeometry y="34" width="160" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-56" value="Observer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-51">
+          <mxGeometry x="360" y="40" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-58" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-56">
+          <mxGeometry y="26" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-59" value="+ Update()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-56">
+          <mxGeometry y="34" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-60" value="ConcreteSubject" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-51">
+          <mxGeometry x="87.5" y="180" width="125" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-61" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-60">
+          <mxGeometry y="26" width="125" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-62" value="ConcreteObserver" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-51">
+          <mxGeometry x="377.5" y="180" width="125" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-63" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-62">
+          <mxGeometry y="26" width="125" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-64" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1.006;exitY=0.178;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="11gKIhfqWF8Fhhnc01fx-51" source="11gKIhfqWF8Fhhnc01fx-52" target="11gKIhfqWF8Fhhnc01fx-56">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="244" y="70" as="sourcePoint" />
+            <mxPoint x="404" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-65" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="11gKIhfqWF8Fhhnc01fx-51" source="11gKIhfqWF8Fhhnc01fx-60">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="212.5" y="170" as="sourcePoint" />
+            <mxPoint x="150" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-66" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="11gKIhfqWF8Fhhnc01fx-51" source="11gKIhfqWF8Fhhnc01fx-62">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="160" y="190" as="sourcePoint" />
+            <mxPoint x="440" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-67" value="+subject" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-51">
+          <mxGeometry x="254" y="28" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-68" value="定义对象间一种一对多的依赖关系，使得每当一个对象改变状态，&lt;br&gt;则所有依赖于它的对象都会得到通知并被自动更新" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-51">
+          <mxGeometry x="125" y="253" width="370" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
