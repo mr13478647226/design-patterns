@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-14T09:08:50.344Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="h5fuRBvkYthSWRUe0DPk" version="21.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-14T09:09:40.573Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="nHg96TZaVRJ0aVYAmcc3" version="21.3.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1434" dy="5440" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -688,7 +688,7 @@
         <mxCell id="11gKIhfqWF8Fhhnc01fx-127" value="使用场景：有动机修改一个已经投产中的接口时，适配器模式可能是最适合的模式" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-109">
           <mxGeometry x="100" y="250" width="460" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="11gKIhfqWF8Fhhnc01fx-126" value="将一个类的接口变换成科幻段所期待的另一种接口，&lt;br&gt;从而使原本因接口不匹配而无法在一起工作的两个类能够在一起工作" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-109">
+        <mxCell id="11gKIhfqWF8Fhhnc01fx-126" value="将一个类的接口变换成客户端所期待的另一种接口，&lt;br&gt;从而使原本因接口不匹配而无法在一起工作的两个类能够在一起工作" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11gKIhfqWF8Fhhnc01fx-109">
           <mxGeometry x="110" y="290" width="380" height="40" as="geometry" />
         </mxCell>
         <mxCell id="11gKIhfqWF8Fhhnc01fx-128" value="注意事项：项目一定要遵循依赖倒置原则和里氏替换原则，&lt;br&gt;否则即使在适合使用适配器的场合下，也会带来非常大的改造" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
